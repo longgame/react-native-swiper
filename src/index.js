@@ -222,7 +222,7 @@ export default class extends Component {
 
   componentDidUpdate(prevProps) {
     // If autoplay props updated to true, autoplay immediately
-    if (this.props.autoplay && !pevProps.autoplay) {
+    if (this.props.autoplay && !prevProps.autoplay) {
       this.autoplay()
     }
     if (this.props.children !== prevProps.children) {
